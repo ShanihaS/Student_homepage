@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Chart from 'chart.js/auto';  
+  
 
 // and then paste the same chart config as above.
 
