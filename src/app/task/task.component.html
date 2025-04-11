@@ -1,0 +1,90 @@
+<div class="container mt-5">
+    
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-left">Student Homepage</h2>
+        <nav>
+            <a href="#" class="text-muted">Home</a> / <a href="#" class="text-primary">Student Homepage</a>
+        </nav>
+        
+    </div> 
+  
+    <div class="row g-3 mb-4">
+          
+        <div class="col-md-3">
+        
+            <div class="card-box bg-blue text-center">
+                <div>
+                    <h4 id="totalAttendance">0</h4>
+                    <p>Total Attendance</p>
+                </div> 
+                <h4><i class="fa fa-shopping-bag"></i></h4> 
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-box bg-green text-center">
+                <div>
+                    <h4 id="percentagePresent">0%</h4>
+                    <p>Percentage Present</p>
+                </div>
+                <h4><i class="fa fa-user-plus"></i></h4>    
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-box bg-red text-center">
+                <div>
+                    <h4 id="percentageAbsent">0%</h4>
+                    <p>Percentage Absent</p>
+                </div>
+                <h4><i class="fa fa-chart-bar"></i></h4>    
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-box bg-yellow text-center text-dark">
+                <div>
+                    <h4 id="totalSubjects">0</h4>
+                    <p>Total Subject</p>
+                </div>
+                <h4><i class="fa fa-chart-pie"></i></h4>    
+            </div>
+        </div>
+    </div>
+  
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="chart-card">
+                <div class="card-title-bar">
+                    <span>Student Homepage</span>
+                    <div class="card-controls">
+                      <span class="me-3" onclick="toggleCardBody('card2')">&minus;</span>
+                      <span onclick="closeCard('card2')">&times;</span>
+                    </div>
+                </div>
+                <div class="legend-box">
+                    <div class="legend-item"><span class="present"></span> Present</div>
+                    <div class="legend-item"><span class="absent"></span> Absent</div>
+                </div>
+                <canvas id="attendanceChart" height="150"></canvas>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="chart-card">
+                <div class="card-title-bar">
+                    <span>Student Homepage</span>
+                    <div class="card-controls">
+                      <span class="me-3" onclick="toggleCardBody('card2')">&minus;</span>
+                      <span onclick="closeCard('card2')">&times;</span>
+                    </div>
+                </div>
+                <div class="legend-box">
+                    <div class="legend-item"><span class="present1"></span> Present</div>
+                    <div class="legend-item"><span class="absent1"></span> Absent</div>
+                </div>
+                
+                
+                <canvas id="attendanceChart" height="150"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+  
